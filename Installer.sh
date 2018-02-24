@@ -20,11 +20,12 @@ case $1 in
 		chmod -R 755 ~/Shelter/
 		echo "sh ~/Shellter/postinstall.sh"
 		sh ~/Shellter/postinstall.sh
-		break
 		;;
 	*)
 		echo "Installing..."
-
+		git clone https://github.com/NightVisionGroup/shellter.git ~/Shellter
+		echo "chmod -R 755 ~/Shellter/"
+		sh ~/Shellter/postinstall.sh
 		;;
 esac
 echo "Done!"
