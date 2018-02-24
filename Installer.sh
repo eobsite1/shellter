@@ -12,7 +12,7 @@ clear
 echo "Installing..."
 cp -a ./. ~/Shellter
 chmod -R 777 ~/Shellter/
-alias shellter=~/Shellter/Run.sh
+alias shellter=~/Shellter/run.sh
 echo "Done!"
 read TMPVAR
 clear
