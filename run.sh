@@ -18,22 +18,17 @@ echo
 echo Please choose an option
 echo    
 #main case
-loop="true"
-while [ loop = "true" ]
-do
 echo "0) exit"
 echo "1) limerick.sh"
 read MENU
 case $MENU in
   0)
-    break
     ;;
   1)
     sh ./limerick.sh
     ;;
   *)
     echo "ERROR: unexpected option, exiting"
-    break
     ;;
 esac
 
