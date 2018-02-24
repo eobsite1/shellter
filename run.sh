@@ -14,6 +14,21 @@ echo -en “\n”
 echo -en “\n”
 echo “Please choose an option”
 echo -en "\n"
-#will add limerick.sh file soon
-echo "1) limerick.sh
+#main case
+echo "0) exit"
+echo "1) limerick.sh"
+read MENU
+case $MENU in
+  0)
+    break
+    ;;
+  1)
+    ./limerick.sh
+    ;;
+  *)
+    echo "try again"    
+    ;;
+esac
+    
+
 }
