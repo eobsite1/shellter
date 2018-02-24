@@ -13,18 +13,22 @@ case $1 in
 	v)
 		echo "Installing..."
 		sleep 1
+		echo "rm ~/Shellter"
+		rm ~/Shellter
+		sleep 1
 		echo "git clone https://github.com/NightVisionGroup/shellter.git ~/Shellter"
 		git clone https://github.com/NightVisionGroup/shellter.git ~/Shellter
 		sleep 1
 		echo "chmod -R 755 ~/Shellter/"
-		chmod -R 755 ~/Shelter/
+		chmod -R 755 ~/Shellter/
 		echo "sh ~/Shellter/postinstall.sh"
 		sh ~/Shellter/postinstall.sh
 		;;
 	*)
 		echo "Installing..."
+		rm ~/Shellter
 		git clone https://github.com/NightVisionGroup/shellter.git ~/Shellter
-		echo "chmod -R 755 ~/Shellter/"
+		chmod -R 755 ~/Shellter/
 		sh ~/Shellter/postinstall.sh
 		;;
 esac
