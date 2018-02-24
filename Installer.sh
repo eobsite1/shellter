@@ -21,8 +21,19 @@ case $1 in
 		sleep 1
 		echo "chmod -R 755 ~/Shellter/"
 		chmod -R 755 ~/Shellter/
+		sleep 1
 		echo "sh ~/Shellter/postinstall.sh"
 		sh ~/Shellter/postinstall.sh
+		sleep 1
+		echo "touch ~/.bashrc"
+		touch ~/.bashrc
+		sleep 1
+		echo "alias shellter=~/Shellter/run.sh"
+		echo "alias shellter=~/Shellter/run.sh" >> ~/.bashrc
+		sleep 1
+		echo "alias shellterupdate=~/Shellter/Updater.sh"
+		echo "alias shellterupdate=~/Shellter/Updater.sh" >> ~/.bashrc
+		sleep 1
 		;;
 	*)
 		echo "Installing..."
@@ -30,6 +41,10 @@ case $1 in
 		git clone https://github.com/NightVisionGroup/shellter.git ~/Shellter
 		chmod -R 755 ~/Shellter/
 		sh ~/Shellter/postinstall.sh
+		touch ~/.bashrc
+		echo "alias shellter=~/Shellter/run.sh" >> ~/.bashrc
+		echo "alias shellterupdate=~/Shellter/Updater.sh" >> ~/.bashrc
+		sleep 1
 		;;
 esac
 echo "Done!"
