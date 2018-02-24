@@ -1,4 +1,7 @@
 #!/bin/bash
+#Installer for Shellter
+#Created by eobsite1
+#Owned by NightVisionGroup
 
 #Run with sudo
 
