@@ -12,7 +12,6 @@ read TMPVAR
 clear
 
 #Actual launcher itself
-menu(){
 echo “ShellTer script launcher”
 echo -en “\n”
 echo -en “\n”
@@ -33,7 +32,4 @@ case $MENU in
     echo "try again"    
     ;;
 esac
-    
-
-}
-menu()
+done
