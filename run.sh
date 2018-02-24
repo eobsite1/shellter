@@ -14,10 +14,12 @@ clear
 #Actual launcher itself
 echo “ShellTer script launcher”
 echo -en “\n”
-echo -en “\n”
 echo “Please choose an option”
 echo -en "\n"
 #main case
+loop="true"
+while [ loop = "true" ]
+do
 echo "0) exit"
 echo "1) limerick.sh"
 read MENU
