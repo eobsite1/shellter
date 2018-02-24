@@ -1,4 +1,8 @@
 #!/bin/bash
+#Main run script for Shellter
+#Created by eobsite1
+#Owned by NightVisionGroup
+
 clear
 echo "Welcome to ShellTer!"
 read TMPVAR
