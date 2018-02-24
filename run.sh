@@ -12,11 +12,11 @@ read TMPVAR
 clear
 
 #Actual launcher itself
-echo “ShellTer script launcher”
-echo -en “\n”
-echo -en “\n”
-echo “Please choose an option”
-echo -en "\n"
+echo ShellTer script launcher
+echo    
+echo     
+echo Please choose an option
+echo    
 #main case
 echo "0) exit"
 echo "1) limerick.sh"
@@ -26,10 +26,11 @@ case $MENU in
     break
     ;;
   1)
-    ./limerick.sh
+    sh ./limerick.sh
     ;;
   *)
-    echo "try again"    
+    echo "ERROR: unexpected option, exiting"
+    break
     ;;
 esac
-done
+
