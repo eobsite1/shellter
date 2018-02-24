@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #run as root
-
+chown $SUDO_USER ~/Shellter/
 cd ~/Shellter/
 rm Installer.sh
 touch Updater.sh
