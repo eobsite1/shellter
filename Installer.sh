@@ -13,8 +13,8 @@ case $1 in
 	v)
 		echo "Installing..."
 		sleep 1
-		echo "rm ~/Shellter"
-		rm ~/Shellter
+		echo "rm -r ~/Shellter"
+		rm -r ~/Shellter
 		sleep 1
 		echo "git clone https://github.com/NightVisionGroup/shellter.git ~/Shellter"
 		git clone https://github.com/NightVisionGroup/shellter.git ~/Shellter
@@ -26,7 +26,7 @@ case $1 in
 		;;
 	*)
 		echo "Installing..."
-		rm ~/Shellter
+		rm -r ~/Shellter
 		git clone https://github.com/NightVisionGroup/shellter.git ~/Shellter
 		chmod -R 755 ~/Shellter/
 		sh ~/Shellter/postinstall.sh
