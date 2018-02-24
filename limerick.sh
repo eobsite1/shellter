@@ -1,3 +1,8 @@
+#!/bin/bash
+#Limerick Shell Script for Shellter
+#Created by eobsite1
+#Owned by NightVisionGroup
+
 clear
 echo "Welcome to limerick Creator!"
 read tmpvar
