@@ -40,7 +40,9 @@ case $1 in
 esac
 echo "Done!"
 sleep 1
-clear
+echo "reload bash and then run the shellter command"
+sleep 1
 echo "Installer will now exit"
 sleep 1
+clear
 exit 0
