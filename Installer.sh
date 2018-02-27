@@ -10,7 +10,7 @@ echo "Press return to install."
 read TMPVAR
 clear
 case $1 in
-	v)
+	-v)
 		echo "Installing..."
 		sleep 1
 		echo "rm -r ~/Shellter"
