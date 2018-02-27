@@ -3,6 +3,7 @@
 #Created by eobsite1
 #Owned by NightVisionGroup
 
+echo "hello, " $USER
 clear
 echo "Welcome to ShellTer!"
 read TMPVAR
