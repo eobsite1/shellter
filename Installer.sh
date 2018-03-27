@@ -10,6 +10,8 @@ echo "Press return to install."
 read TMPVAR
 clear
 case $1 in
+	
+	#Verbose argument
 	-v)
 		echo "Installing..."
 		sleep 1
@@ -35,6 +37,35 @@ case $1 in
 		echo "alias shellterupdate=~/Shellter/Updater.sh" >> ~/.bashrc
 		sleep 1
 		;;
+		
+	#isroot argument
+	-r)
+		echo "Installing..."
+		sleep 1
+		echo "rm -r /root/Shellter"
+		rm -r /root/Shellter
+		sleep 1
+		echo "git clone https://github.com/NightVisionGroup/shellter.git /root/Shellter"
+		git clone https://github.com/NightVisionGroup/shellter.git /root/Shellter
+		sleep 1
+		echo "chmod -R 755 /root/Shellter/"
+		chmod -R 755 /root/Shellter/
+		sleep 1
+		echo "sh /root/Shellter/postinstall.sh"
+		sh /root/Shellter/postinstall.sh
+		sleep 1
+		echo "touch /root/.bashrc"
+		touch /root/.bashrc
+		sleep 1
+		echo "alias shellter=/root/Shellter/run.sh"
+		echo "alias shellter=/root/Shellter/run.sh" >> /root/.bashrc
+		sleep 1
+		echo "alias shellterupdate=/root/Shellter/Updater.sh"
+		echo "alias shellterupdate=/root/Shellter/Updater.sh" >> /root/.bashrc
+		sleep 1
+		;;
+		
+	#any other arguments or no arguments
 	*)
 		echo "Installing..."
 		rm -r ~/Shellter
